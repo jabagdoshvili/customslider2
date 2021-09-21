@@ -426,7 +426,7 @@ body {
   }
   .blog-slider__pagination {
     bottom: 0;
-    top: unset;
+    top: 175px !important;
   }
   .slider-buttons .icon {
     margin: 1rem 0.35rem;
