@@ -14,6 +14,10 @@ body {
 
 $brandColor: var(--brand-color);
 
+.container {
+  display: flex;
+}
+
 .blog-slider {
   width: 95%;
   position: relative;
@@ -165,6 +169,7 @@ $brandColor: var(--brand-color);
 }
 
 @media screen and (max-width: 768px) {
+
   .blog-slider__img {
     transform: translateY(-50%);
     width: 90%;
@@ -239,6 +244,9 @@ $brandColor: var(--brand-color);
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
+  &:hover {
+    color: white;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -358,6 +366,16 @@ $brandColor: var(--brand-color);
 @media screen and (max-width: 768px) {
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 5px;
+  }
+  .blog-slider__pagination {
+    bottom: 0;
+    top: unset;
+  }
+  .slider-buttons .icon {
+    margin: 1rem 0.35rem;
+  }
+  .blog-slider__pagination .slider-buttons {
+    flex-direction: unset;
   }
 }
 

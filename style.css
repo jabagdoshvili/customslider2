@@ -14,6 +14,12 @@ body {
   --brand-color:#08f;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .blog-slider {
   width: 95%;
   position: relative;
@@ -278,6 +284,10 @@ body {
   letter-spacing: 1px;
 }
 
+.blog-slider__button:hover {
+  color: white;
+}
+
 @media screen and (max-width: 576px) {
   .blog-slider__button {
     width: 100%;
@@ -413,6 +423,19 @@ body {
 @media screen and (max-width: 768px) {
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 5px;
+  }
+  .blog-slider__pagination {
+    bottom: 0;
+    top: unset;
+  }
+  .slider-buttons .icon {
+    margin: 1rem 0.35rem;
+  }
+  .blog-slider__pagination .slider-buttons {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
   }
 }
 
