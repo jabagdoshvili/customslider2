@@ -431,6 +431,9 @@ body {
   .slider-buttons .icon {
     margin: 1rem 0.35rem;
   }
+  .slider-buttons .icon.active {
+    border: 1px solid var(--brand-color);
+  }
   .blog-slider__pagination .slider-buttons {
     -webkit-box-orient: unset;
     -webkit-box-direction: unset;

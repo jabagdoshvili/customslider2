@@ -373,6 +373,9 @@ $brandColor: var(--brand-color);
   }
   .slider-buttons .icon {
     margin: 1rem 0.35rem;
+    &.active {
+      border: 1px solid var(--brand-color);
+    }
   }
   .blog-slider__pagination .slider-buttons {
     flex-direction: unset;
